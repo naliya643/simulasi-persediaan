@@ -1,5 +1,5 @@
-Nama: Maimunah Hilaliyah Aprilia Widagdo
-NIM: 2311060130
+Nama: Maimunah Hilaliyah Aprilia Widagdo |
+NIM: 2311060130 |
 Judul Proyek: Aplikasi Simulasi Persediaan Stok Barang 
 
 ## 1. Deskripsi Proyek
