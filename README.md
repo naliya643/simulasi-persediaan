@@ -2,11 +2,11 @@ Nama: Maimunah Hilaliyah Aprilia Widagdo
 NIM: 2311060130
 Judul Proyek: Aplikasi Simulasi Persediaan Stok Barang 
 
-1. Deskripsi Proyek
+## 1. Deskripsi Proyek
 Proyek ini mensimulasikan beberapa jumlah persediaan barang selama periode tertentu ketika permintaan harian tidak pasti.Proyek ini menggunakan metode Monte Carlo untuk mengambil permintaan harian  dari distribusi probabilitas diskret, kemudian model persediaan menghitung penjualan terpenuhi, permintaan yang tidak terpenuhi (lost sales), stok akhir, serta pemesanan ulang.
 Aplikasi ini menyediakan fitur parameter yang dapat diubah – ubah serta dapat menjalankan simulasi berulang. Hasilnya adalah berupa estimas rata-rata permintaan, jumlah permintaan tidak terpenuhi dan kemungkinan terjadinya kehabisan stok.
 
-2. Tujuan	
+## 2. Tujuan	
 1. Memahami penerapan metode Monte Carlo. 
 2. Memahami dampak jumlah stok awal, pemesanan ulang, jumlah pemesanan dan waktu pengadaan.
 3. Mengamati hasil siumulasi pengadaan.
