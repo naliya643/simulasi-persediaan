@@ -1,23 +1,17 @@
-# Simulasi Persediaan Barang Menggunakan Metode Monte Carlo
+Nama: Maimunah Hilaliyah Aprilia Widagdo
+NIM: 2311060130
+Judul Proyek: Aplikasi Simulasi Persediaan Stok Barang 
 
-**Mata kuliah:** Simulasi dan Pemodelan  
-**Jenis proyek:** Aplikasi simulasi persediaan berbasis web  
-**Bahasa:** Python
+1. Deskripsi Proyek
+Proyek ini mensimulasikan beberapa jumlah persediaan barang selama periode tertentu ketika permintaan harian tidak pasti.Proyek ini menggunakan metode Monte Carlo untuk mengambil permintaan harian  dari distribusi probabilitas diskret, kemudian model persediaan menghitung penjualan terpenuhi, permintaan yang tidak terpenuhi (lost sales), stok akhir, serta pemesanan ulang.
+Aplikasi ini menyediakan fitur parameter yang dapat diubah – ubah serta dapat menjalankan simulasi berulang. Hasilnya adalah berupa estimas rata-rata permintaan, jumlah permintaan tidak terpenuhi dan kemungkinan terjadinya kehabisan stok.
 
-## 1. Deskripsi proyek
+2. Tujuan	
+1. Memahami penerapan metode Monte Carlo. 
+2. Memahami dampak jumlah stok awal, pemesanan ulang, jumlah pemesanan dan waktu pengadaan.
+3. Mengamati hasil siumulasi pengadaan.
+4. Mendokumentasi hasil simulasi.
 
-Proyek ini mensimulasikan perubahan persediaan satu jenis barang selama periode tertentu ketika permintaan harian tidak pasti. Metode Monte Carlo digunakan untuk mengambil permintaan harian dari distribusi probabilitas diskret, kemudian model persediaan menghitung penjualan terpenuhi, permintaan yang tidak terpenuhi (*lost sales*), stok akhir, serta pemesanan ulang.
-
-Aplikasi menyediakan parameter yang dapat diubah pengguna dan menjalankan banyak replikasi simulasi. Hasil antar-replikasi digunakan untuk mengestimasi rata-rata permintaan, jumlah permintaan yang tidak terpenuhi, dan probabilitas terjadinya kehabisan stok selama periode simulasi.
-
-> **Penting:** distribusi dalam `data/demand_distribution.csv` adalah data sintetis untuk demonstrasi, bukan data penjualan toko nyata. Ganti atau kalibrasi distribusi tersebut jika tersedia data observasi.
-
-## 2. Tujuan
-
-1. Memahami penerapan simulasi Monte Carlo pada sistem persediaan.
-2. Mengamati dampak stok awal, titik pemesanan ulang, jumlah pemesanan, dan waktu pengadaan.
-3. Membandingkan hasil dari beberapa pengulangan simulasi.
-4. Mendokumentasikan asumsi, kode, pengujian, dan hasil melalui GitHub.
 
 ## 3. Metode dan model
 
@@ -124,27 +118,3 @@ pytest -q
 
 Pengujian memeriksa validitas distribusi probabilitas, penolakan total probabilitas yang tidak sama dengan 1, jumlah hari hasil simulasi, dan konsistensi hasil saat seed yang sama digunakan.
 
-## 10. Persentase keterlibatan AI
-
-Isi bagian ini berdasarkan penggunaan AI yang benar-benar terjadi selama pengerjaan. Jangan mencantumkan angka perkiraan tanpa metode pengukuran yang disepakati dengan dosen.
-
-Contoh format pelaporan:
-
-- **Bagian yang dikerjakan sendiri:** [jelaskan bagian yang benar-benar dikerjakan sendiri].
-- **Bantuan AI:** [jelaskan bagian yang benar-benar dibantu AI].
-- **Metode perhitungan persentase:** [jelaskan metode yang diminta atau disetujui dosen].
-- **Bukti:** [tautan atau tangkapan layar bukti yang relevan, sesuai ketentuan kampus].
-
-Persentase akhir harus sesuai batas maksimal yang ditetapkan dosen. Riwayat commit GitHub menunjukkan perkembangan kode, tetapi tidak dengan sendirinya membuktikan persentase kontribusi AI.
-
-## 11. Batasan model
-
-- Model hanya mencakup satu jenis barang.
-- Permintaan diambil dari distribusi diskret yang diasumsikan.
-- Permintaan yang tidak dapat dipenuhi dicatat sebagai *lost sales*.
-- Belum ada biaya pemesanan, biaya penyimpanan, kedaluwarsa, atau optimasi jumlah pesanan.
-- Hasil simulasi bergantung pada parameter, distribusi, dan jumlah replikasi.
-
-## 12. Pelaporan GitHub
-
-Lakukan commit secara bertahap ketika mengembangkan kode, menguji model, memperbaiki dokumentasi, dan menganalisis hasil. Pastikan riwayat commit mencerminkan pekerjaan yang benar-benar dilakukan. Jangan membuat commit palsu untuk mengesankan aktivitas.
